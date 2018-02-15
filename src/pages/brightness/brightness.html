@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Brightness
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content padding>
+   
+    <ion-card>
+      <ion-card-header>
+        <h1>Brightness</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-range color="secondary" min="0" max="10" step="1" (ionChange)="setBrightness()" [(ngModel)]="brightness">
+          <ion-label range-left>0</ion-label>
+          <ion-label range-right>10</ion-label>
+        </ion-range>
+      </ion-card-content>
+    </ion-card>
+   
+  </ion-content>

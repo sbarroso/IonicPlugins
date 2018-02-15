@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <ion-title>
+        Speech Recognition
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content padding>
+    <button ion-button (click)="isSpeechSupported()">Is Speech Supported?</button>
+    <button ion-button (click)="getPermission()">Get Permission</button>
+    <button ion-button (click)="hasPermission()">Has Permission?</button>
+    <button ion-button (click)="getSupportedLanguages()">Get Supported Languages</button>
+    <button ion-button (click)="listenForSpeech()">Listen for Speech</button>
+
+    <ion-card>
+      <ion-card-content *ngFor="let speech of speechList">
+        <ion-input value="speech"></ion-input>
+      </ion-card-content>
+    </ion-card>
+  <ion-content>

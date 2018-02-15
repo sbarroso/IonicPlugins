@@ -1,0 +1,29 @@
+<!--
+  Generated template for the BadgesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Badges</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+      <ion-label floating>Badge Number</ion-label>
+      <ion-input type="number" [(ngModel)]="badgeNumber"></ion-input>
+    </ion-item>
+
+    <button ion-button (click)="setBadges(badgeNumber)">Set Badges to</button>
+    <button ion-button (click)="increaseBadges(badgeNumber)">Increase Badges by</button>
+    <button ion-button (click)="decreaseBadges(badgeNumber)">Decrease Badges by</button>
+    <button ion-button (click)="getBadges()">Get Badges</button>
+    <button ion-button (click)="clearBadges()">Clear Badges</button>
+    <button ion-button (click)="requestPermission()">Request Permission</button>
+
+  </ion-content>
