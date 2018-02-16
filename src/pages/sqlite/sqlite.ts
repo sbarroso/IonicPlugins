@@ -1,6 +1,6 @@
 import { DatabaseProvider } from './../../providers/database/database';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 /**
  * Generated class for the SqlitePage page.

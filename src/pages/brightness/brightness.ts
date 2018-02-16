@@ -1,6 +1,6 @@
 import { Brightness } from '@ionic-native/brightness';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 /**
  * Generated class for the BrightnessPage page.
